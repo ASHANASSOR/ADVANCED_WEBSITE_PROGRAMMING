@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Population Percentage</title>
+</head>
+<body>
+    <script>
+        //function declaration
+        function percentageOfWorld1(population){
+            return(population/7900)*100;
+        }
+        let chinaPopulation = 1441;
+        let tnzPopulation = 1393;
+        let turkeyPopulation = 331;
+
+        let chinaPercentage = percentageOfWorld1(chinaPopulation);
+        let tnzPercentage = percentageOfWorld1(tnzPopulation);
+        let turkeyPercentage = percentageOfWorld1(turkeyPopulation);
+
+        console.log("Function Declaration:");
+        console.log("China:",chinaPercentage.toFixed(2)+"%");
+        console.log("Tanzania:",tnzPercentage.toFixed(2)+"%");
+        console.log("Turkey:",turkeyPercentage.toFixed(2)+"%");
+
+        //function expression
+        let percentageOfWorld2 = function(population){
+            return(population/7900)*100;
+        }
+        let chinaPercentage2 = percentageOfWorld2(chinaPopulation);
+        let tnzPercentage2 = percentageOfWorld2(tnzPopulation);
+        let turkeyPercentage2 = percentageOfWorld2(turkeyPopulation);
+
+
+        console.log("Function Expression:");
+        console.log("China:",chinaPercentage2.toFixed(2)+"%");
+        console.log("Tanzania:",tnzPercentage2.toFixed(2)+"%");
+        console.log("Turkey:",turkeyPercentage2.toFixed(2)+"%");   
+        
+        //arrow function
+        let percentageOfWorld3 = (population) => (population/7900)*100;
+
+        let chinaPercentage3 = percentageOfWorld3(chinaPopulation);
+        let tnzPercentage3 = percentageOfWorld3(chinaPopulation);
+        let turkeyPercentage3 = percentageOfWorld3(chinaPopulation);
+
+        console.log("Arrow Function:");
+        console.log("China:",chinaPercentage3.toFixed(2)+"%");
+        console.log("Tanzania:",tnzPercentage3.toFixed(2)+"%");
+        console.log("Turkey:",turkeyPercentage3.toFixed(2)+"%");
+
+
+
+
+
+        
+
+
+    </script>
+    
+</body>
+</html>

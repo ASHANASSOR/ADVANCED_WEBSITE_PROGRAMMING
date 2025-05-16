@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+</head>
+<body>
+    <div class = "section">
+        <h2> What is your name? </h2>
+       
+        <input type="text" id="username" placeholder="Your name">
+        <button onclick="showWelcomeMessage()">SUBMIT</button>
+        <p id="WelcomeMessage"></p>
+    </div>
+
+    <script>
+        function showWelcomeMessage(){
+            var name = document.getElementById("username").value;
+            if(name.length > 3){
+                document.getElementById("WelcomeMessage").innerText = "Welcome to the site " +name;
+            }else{
+                document.getElementById("WelcomeMessage").innerText = "Name must be more than 3 characters long.";
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
